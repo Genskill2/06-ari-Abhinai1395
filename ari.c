@@ -6,7 +6,7 @@
 string ari(string s)
 {
    int countc=0,countw=0,counts=0,i=0;
-   while(s[i]!='/0'){
+   while(s[i]!='\0'){
       if(isalnum(s[i]))
          countc++;
       if(s[i]==' ')
@@ -16,7 +16,7 @@ string ari(string s)
       i++;
    }
    float score= 4.71*countc/countw + 0.5*countw/counts -21.43;
-   int k= ciel(score);
+   int k= ceil(score);
    switch(k)
    { 
       case 1: return "Kindergarten";
