@@ -6,7 +6,7 @@
 string ari(string s)
 {
    int countc=0,countw=0,counts=0,i=0;
-   while(s[i]!="/0"){
+   while(s[i]!='/0'){
       if(isalnum(s[i]))
          countc++;
       if(s[i]==' ')
